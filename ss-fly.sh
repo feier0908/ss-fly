@@ -332,7 +332,7 @@ download_files() {
 generate_config() {
     cat > /etc/shadowsocks.json<<-EOF
 {
-    "server":"::",
+    "server":"0.0.0.0",
     "server_port":$2,
     "local_address":"127.0.0.1",
     "local_port":1080,
